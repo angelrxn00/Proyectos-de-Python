@@ -26,16 +26,18 @@ print(f"La letra '{letras[0]}' aparece {texto_a_introducir.count(letras[0],0)} v
       f"La letra '{letras[1]}' aparece {texto_a_introducir.count(letras[1],0)} veces. "
       f"La letra '{letras[2]}' aparece {texto_a_introducir.count(letras[2],0)} veces.\n")
 
+
 # Le mostramos al usuario el texto introducido en forma de lista y dividido y la longitud del mismo.
 lista_de_palabras = texto_a_introducir.split()
-print(f"Texto dividido en elementos de lista: {lista_de_palabras}",'\n', f"Longitud del texto: {(len(lista_de_palabras))} palabras")
-
+print(f"Texto dividido en elementos de lista: {lista_de_palabras} - Longitud del texto: {(len(lista_de_palabras))} palabras")
+print('\n')
 # Mostramos al usuario la primera y la última letra del texto introducido.
-print(f"-- Primera letra introducida en el texto: \n{texto_a_introducir[0]}\n "
-    f"-- Última letra introducida en el texto: \n{texto_a_introducir[-1]}\n")
+print(f"Primera letra introducida en el texto: '{texto_a_introducir[0]}'")
 
-# Mostramos al usuario su texto introducido pero en orden invertido.
-print(f"Texto introducido pero en orden invertido: {texto_a_introducir[::-1]}")
-
+print(f"Última letra introducida en el texto: '{texto_a_introducir[-1]}'")
+print('\n')
+# Mostramos al usuario su texto introducido y la lista de palabras del texto pero en orden invertido.
+print(f"Texto introducido pero en orden invertido: {texto_a_introducir[::-1]}\nY la lista de palabras invertida es: '{lista_de_palabras[::-1]}'")
+print('\n')
 # Mostramos al usuario si el texto contiene la palabra 'python' o no.
 print(f"Verificación de si el texto introducido por el usuario contiene la palabra 'python': {bool('python' in texto_a_introducir)}")
