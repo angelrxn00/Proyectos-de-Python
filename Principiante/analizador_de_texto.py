@@ -1,7 +1,7 @@
 """
 # >>> Se actualizará periódicamente
 #############################################################################
-Analizador de texto - Proyecto 3 del Curso de Python "Python avanzado en 16 días".
+Analizador de texto 
 ----------------------------------------------------------------------------------
 Proyecto en el cual pondremos en práctica los siguientes conceptos, aparte de aquellos utilizados en el
 Proyecto 2:
