@@ -3,9 +3,6 @@
 #############################################################################
 Analizador de texto 
 ----------------------------------------------------------------------------------
-Proyecto en el cual pondremos en práctica los siguientes conceptos, aparte de aquellos utilizados en el
-Proyecto 2:
-
 El objetivo del proyecto es que, mediante un texto cualquiera que el usuario introduzca y después 3 letras a su elección, analicemos estos 5 casos:
     - Cuántas veces aparece cada letra (elegida anteriormente), mayúsculas y minúsculas
     - Cuántas palabras hay en total
