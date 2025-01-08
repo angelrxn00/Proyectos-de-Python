@@ -46,7 +46,8 @@ print("¡Buena suerte! ☻")
 intentos = 0
 
 # Main Loop
-while True:
+while intentos < 8:
+    #print("Estamos dentro del bucle")
     numero_adivinado = int(input("Adivina el número: "))
     intentos += 1
     match numero_adivinado:
@@ -57,10 +58,7 @@ while True:
         case num if num > numero_aleatorio:
             print("[!] El número introducido es mayor al número aleatorio")
         case num if num == numero_aleatorio:
-            print(f"[!!!] ¡Felicidades! ¡Has adivinado el número! Con {intentos} intentos")
-            break
-        case num if intentos == 8:
-            print("[!] Te has quedado sin intentos")
+            print(f"¡Felicidades! ¡Has adivinado el número! Con {intentos} intentos")
             break
         case _:
             print("[@] No se reconoce ese formato de entrada")
