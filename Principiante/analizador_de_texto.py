@@ -1,17 +1,15 @@
 """
-# >>> Se actualizará periódicamente
 #############################################################################
-Analizador de texto 
+Analizador de texto - Proyecto 3 del Curso de Python "Python avanzado en 16 días".
 ----------------------------------------------------------------------------------
 El objetivo del proyecto es que, mediante un texto cualquiera que el usuario introduzca y después 3 letras a su elección, analicemos estos 5 casos:
-    - Cuántas veces aparece cada letra (elegida anteriormente), solo minúsculas
+    - Cuántas veces aparece cada letra (elegida anteriormente), mayúsculas y minúsculas
     - Cuántas palabras hay en total
     - Mostrar la primera y la última letra
     - Mostrar las palabras en orden inverso
     - Y, por último, si en el texto aparece la palabra 'python'
 
 """
-
 # Le decimos al usuario que escriba un texto cualquiera para operar sobre él.
 texto_a_introducir = input("Introduce tu texto: ")
 
@@ -31,13 +29,20 @@ print(f"La letra '{letras[0]}' aparece {texto_a_introducir.count(letras[0],0)} v
 lista_de_palabras = texto_a_introducir.split()
 print(f"Texto dividido en elementos de lista: {lista_de_palabras} - Longitud del texto: {(len(lista_de_palabras))} palabras")
 print('\n')
+
 # Mostramos al usuario la primera y la última letra del texto introducido.
 print(f"Primera letra introducida en el texto: '{texto_a_introducir[0]}'")
 
 print(f"Última letra introducida en el texto: '{texto_a_introducir[-1]}'")
 print('\n')
+
 # Mostramos al usuario su texto introducido y la lista de palabras del texto pero en orden invertido.
-print(f"Texto introducido pero en orden invertido: {texto_a_introducir[::-1]}\nY la lista de palabras invertida es: '{lista_de_palabras[::-1]}'")
+lista_de_palabras.reverse()
+texto_invertido = ' '.join(lista_de_palabras)
+print(f"Texto introducido pero en orden invertido: {texto_invertido}")
 print('\n')
+
 # Mostramos al usuario si el texto contiene la palabra 'python' o no.
-print(f"Verificación de si el texto introducido por el usuario contiene la palabra 'python': {bool('python' in texto_a_introducir)}")
+palabra_python = 'python' in texto_a_introducir
+diccionario_comprobador_python = {True:'sí',False:'no'}
+print(f"Verificación de si el texto introducido por el usuario contiene la palabra 'python': {diccionario_comprobador_python[palabra_python]}"
