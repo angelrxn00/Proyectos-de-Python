@@ -32,7 +32,7 @@ sleep(1.5)
 print(f"Hola, {nombre_usuario}. ¡Bienvenido/a al juego 'Adivina el Número'!")
 sleep(1.75)
 
-print("A continuación, se generará el número aleatorio que tienes que adivinar")
+print("A continuación, se generará el número aleatorio que tienes que adivinar. Tendrás 8 intentos para adivinarlo.")
 sleep(3)
 numero_aleatorio = randint(1,100)
 
@@ -49,7 +49,7 @@ intentos = 0
 while True:
     intentos += 1
     if intentos == 8:
-        print(f"Has agotado tus intentos, {nombre_usuario}. ¡Buena suerte la próxima vez!")
+        print(f"Intentos: {intentos}/8. Has agotado tus intentos, {nombre_usuario}. ¡Buena suerte la próxima vez!")
         break
     numero_adivinado = int(input("Adivina el número: "))
 
