@@ -1,7 +1,6 @@
 """
 #############################################################################
-Analizador de texto - Proyecto 3 del Curso de Python "Python avanzado en 16 días".
-----------------------------------------------------------------------------------
+
 El objetivo del proyecto es que, mediante un texto cualquiera que el usuario introduzca y después 3 letras a su elección, analicemos estos 5 casos:
     - Cuántas veces aparece cada letra (elegida anteriormente), mayúsculas y minúsculas
     - Cuántas palabras hay en total
