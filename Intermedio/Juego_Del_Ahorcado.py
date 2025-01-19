@@ -72,8 +72,8 @@ def main():
     Función principal para orquestar el juego del ahorcado.
     """
     # Configurar el juego
-    palabra_al_azar = escoger_palabra_de_lista(lista_palabras)
-    lista_guiones = generar_guiones_para_palabra(palabra_al_azar)
+    palabra_al_azar = escoger_palabra_de_lista(lista_palabras) # Argumento de la función declarado explícitamente, al ser referenciado y almacenado en la variable.
+    lista_guiones = generar_guiones_para_palabra(palabra_al_azar) # Argumento de la función declarado explícitamente, al ser referenciado y almacenado en la variable.
 
     # Debugging: Descomenta esta línea para revelar la palabra
     # print(f"Palabra seleccionada: {''.join(palabra_al_azar)}")
